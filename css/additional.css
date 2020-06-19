@@ -1,0 +1,16 @@
+.logo {
+	height: 15rem;
+	border-radius: 50%;
+}
+
+.caption-name {
+	color: #fff;
+	font-size:2rem;
+	font-weight:800;
+}
+
+.caption-role {
+	color: #fff;
+	font-size:1.8rem;
+	font-weight:600;
+}
