@@ -15,9 +15,11 @@
 	margin-right:15px;
 	padding:8px;
 	border:1px solid #fff;
+	border-radius:5px;
 	font-size:2rem;
 	font-weight:600;
 	background: rgba(0,0,0,0.25);
+	color:#fff !important;
 }
 
 .btn-container {
@@ -29,40 +31,26 @@
 .btn-below:hover {
 	cursor:pointer;
 	background: rgba(0,0,0,0.5);
+	color: #fff;
+	text-decoration:none;
 }
 
-/* .caption-name { */
-	/* color:#343a40; */
-	/* font-size:2rem; */
-	/* font-weight:800; */
-/* } */
+a:link, a:visited {
+	color:#343a40;
+}
 
-/* .caption-role { */
-	/* color:#343a40; */
-	/* font-size:1.8rem; */
-	/* font-weight:600; */
-/* } */
+.fa-external-link {
+	opacity:0;
+}
 
-/* .caption-container { */
-	/* width:28rem; */
-	/* margin-top: 15px; */
-	/* display:inline-block; */
-	/* padding: 8px; */
-	/* border-radius: 16px; */
-	/* text-align:left; */
-/* } */
+#resume-link:hover > .fa-external-link {
+	opacity:1;
+}
 
-/* .big-screen { */
-	/* display: none; */
-/* } */
-
-/* @media (min-width: 767.98px) { */
-	/* .big-screen { */
-		/* display: inline-block; */
-	/* } */
-	/* .small-screen { */
-		/* display:none; */
-	/* } */
-	/* .logo-container { */
-		/* text-align:left; */
-	/* } */
+.footer {
+  margin-top:15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

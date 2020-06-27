@@ -16,33 +16,31 @@
   <!-- Custom styles for this template -->
   <link href="css/full-width-pics.css" rel="stylesheet">
   <link href="css/additional.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
 </head>
 
-<body>
+<body id="page-top">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">thomasjhowell.com</a>
+      <a class="navbar-brand" href="index.html">thomasjhowell.com</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
+            <a class="nav-link" href="index.html">About
+			<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="projects.html">Portfolio
+			</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+		  <li class="nav-item">
+            <a id="resume-link" class="nav-link" href="Thomas Howell - Resume.pdf" target="_blank">Resume <i style="font-size:0.8rem;" class="fa fa-external-link" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
@@ -50,15 +48,16 @@
   </nav>
 
   <!-- Header - set the background image for the header in the line below -->
-  <header class="py-5 bg-image-full" style="background-image: url('img/space1_c2.jpg');width:100%;  overflow-x: hidden;">
+  <header class="py-5 bg-image-full" style="background-image: url('img/space1_c2.jpg');width:100%;overflow-x: hidden;">
     <div class="row">
 		<div class="col">
 		  <table style="width:60%;margin-left:auto;margin-right:auto">
 			<tbody> 
 				<tr>
-					<td class="logo-container"><img class="logo" src="img/Thomas-Howell.jpg" alt=""></td>
-				</tr><tr>
-					<td class="btn-container"><a class="btn-below">Resume</a><a class="btn-below">Contact</a></td>
+					<td class="logo-container"><img class="logo" src="./img/Thomas-Howell.JPG" alt=""></td>
+				</tr>
+				<tr>
+					<td class="btn-container"><a class="btn-below" href="mailto:thomas.howell@duke.edu"><i class="fa fa-paper-plane" aria-hidden="true"></i> Contact Me</a></td>
 				</tr>
 			</tbody>
 			</table>
@@ -67,7 +66,7 @@
   </header>
 
   <!-- Content section -->
-  <section class="py-5">
+  <section id="about" class="py-5">
     <div class="container">
       <h1>Thomas Howell</h1>
 	  <p class="lead">Mechanical Engineering Student<br>
@@ -76,24 +75,29 @@
 	  In addition to my major, I am pursuing a certificate in Aerospace Engineering and a minor in Computer Science. While an engineer at heart, I am also an experienced programmer who thrives
 	  at the intersection of hardware and software. At my core, I am passionate about creatively solving any real-world problems and am 
 	  actively seeking out new and exciting opportunities in engineering and software development. </p>
+	  <br>
+	  <hr style="width:100%">
+	  <br>
+	  <div class="col">
+	    <div class="row">
+			<table class="table table-borderless">
+				<tr>
+					<td><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></td>
+					<td style="width:100%"><a id="loc" href="https://www.google.com/maps/place/Stony+Brook,+NY/@40.8113799,-73.0347843,8.83z/data=!4m5!3m4!1s0x89e83f2aae781151:0x49f925381c086b3e!8m2!3d40.9256538!4d-73.1409429" target="_blank">Stony Brook, NY</a></td>
+				</tr><tr>
+					<td><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></td>
+					<td><a id="linkedin" href="https://www.linkedin.com/in/thomasjhowell/" target="_blank">linkedin.com/in/thomasjhowell</a></td>
+				</tr><tr>
+					<td><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></td>
+					<td><a href="mailto:thomas.howell@duke.edu" target="_blank">thomas.howell@duke.edu</a></td>
+				</tr>
+			</table>
+		</div>
+	  </div>
     </div>
   </section>
-
-  <!-- Image Section - set the background image for the header in the line below -->
-  <!-- <section class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');"> -->
-    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <!-- <div style="height: 200px;"></div> -->
-  <!-- </section> -->
-
-  <!-- Content section -->
-  <!-- <section class="py-5"> -->
-    <!-- <div class="container"> -->
-      <!-- <h1>Section Heading</h1> -->
-      <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
-      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p> -->
-    <!-- </div> -->
-  <!-- </section> -->
-
+  
+  
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
@@ -106,6 +110,11 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
 </body>
 
 </html>
