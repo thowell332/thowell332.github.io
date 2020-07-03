@@ -43,12 +43,16 @@
 	color:#343a40;
 }
 
-.fa-external-link {
+.fa-paper-plane {
 	opacity:0;
 }
 
-#resume-link:hover > .fa-external-link {
+#contact-link:hover > .fa-paper-plane {
 	opacity:1;
+}
+
+#contact-link:focus {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .footer {
@@ -100,5 +104,34 @@
 .portfolio {
 	background-position:top;
 	cursor:pointer;
-	border:1px solid #343a40
+	border:1px solid #343a40;
+}
+
+.portfolio-left {
+	clear:left;
+	float:left;
+	margin-right:30px;
+	margin-bottom:0px;
+	object-fit:cover;
+	object-position:top;
+}
+
+.portfolio-right {
+	clear:right;
+	float:right;
+	margin-left:30px;
+	margin-bottom:0px;
+	object-fit:cover;
+	object-position:top;
+}
+
+.mast-doc {
+	width:30%;
+	max-height:200px;
+}
+
+@media (min-width: 992px) {
+	.mast-doc {
+		max-height:150px;
+	}
 }
