@@ -38,7 +38,7 @@
             <a class="nav-link" href="projects.html">Portfolio<span class="sr-only">(current)</span></a>
           </li>
 		      <li class="nav-item">
-            <a id="contact-link" class="nav-link" href="mailto:thomas.howell@duke.edu">Contact <i style="font-size:0.8rem;" class="fa fa-paper-plane" aria-hidden="true"></i></a>
+            <a id="resume-link" class="nav-link" href="Thomas Howell - Resume.pdf" target="_blank">Resume <i class="fa fa-external-link" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
@@ -52,101 +52,177 @@
   <!-- Content section -->
   <section class="py-5">
     <div class="container">
-      <h1>Autonomous Lawn Care Robot</h1>
-	  <p class="lead">May 2020 - present</p>
-      <p>*under construction*</p>
-	  <h1>Motorized Kayak Hydrofoil</h1>
-	  <p class="lead">January 2020 - present</p>
-      <p>*under construction*</p>
-	  <h1>Automated Mast Sorting Device</h1>
-	  <p class="lead">August 2018 - May 2019</p>
-      <p>At the behest of the Duke Forest, I worked in a team of 5 students to design and prototype an automated sorting device for tree nuts, known as mast, 
-        to operate via purely mechanical sorting methods. I later revisited the project in a new team of 3 students to build a higher fidelity prototype
-        by machining aluminum and polycarbonate components to replace the original, primarily wooden device. We also redesigned the device to make it smaller,
-        more compact, and easier to transport.
-      </p>
-    <div class="row">
-      <div class="col-8">
-        <h2 class="secondary">Poster</h2>
-        <p>After the completion of the first prototype, we presented our device at the Duke First-Year Design Showcase. We created this poster to
-          accompany our presentation at the poster session.
+      <!-- <div class="row">
+        <div class="col"><h1>Major Projects:</h1></div>
+      </div>
+      <div class="row" style="text-align:center">
+        <div class="col-4 portfolio"><img class="portfolio-img" src='portfolio/kayak/placeholder.jpg' width="100%" height="auto"></img><br>
+          <h3>Motorized Kayak Hydrofoil</h3></div>
+        <div class="col-4 portfolio"><img class="portfolio-img" src='portfolio/mast/model.png' width="100%" height="auto"></img><br>
+          <h3>Automated Mast Sorting Device</h3></div>
+        <div class="col-4 portfolio"><img class="portfolio-img" src='portfolio/nanocomposites/thermal image.png' width="100%" height="auto"><br>
+          <h3>Nanocomposite Fabrication for 3D Printing</h3></div>
+        </div>
+      <br>
+      <div class="row">
+        <div class="col"><h1>Minor Projects:</h1></div>
+      </div>
+      <div class="row" style="text-align:center">
+        <div class="col-4 portfolio"><img class="portfolio-img" src='portfolio/mcdonalds/model.png' width="100%" height="auto" style="background-color: #f8f9f8;"><br>
+          <h3>Captain America Shield Launcher</h3></div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div> -->
+    
+      <span id="major" class="lead projects active" onclick="switchTabs('major','minor');switchDisp('majorProj','minorProj')">Major Projects</span>
+      <span class="lead"> - </span>
+      <span id="minor" class="lead projects" onclick="switchTabs('minor','major');switchDisp('minorProj','majorProj')">Minor Projects</span>
+      <br><br>
+      <div id="majorProj">
+        <h1>Autonomous Lawn Care Robot</h1>
+        <p class="lead">May 2020 - present</p>
+          <p>I am currently working in a team of 8 students to design an autonomous lawn mower which uses an Arduino microcrontroller 
+            with a GPS module for path planning and motor control. I am solely responsible for writing the code to control this robot, but also play
+            an active role in desigining and modeling the mechanical structures.</p>
+          <p>***More details coming soon!***</p>
+        <h1>Motorized Kayak Hydrofoil</h1>
+        <p class="lead">January 2020 - present</p>
+          <p>In a team of 4 students, I have been working on creating an RC kayak hydrofoil using a standard 6ft kayak, an electric trolling motor,
+            and custom-made fiberglass hydrofoil wings. The design and 3D model of the device have already been completed, but physical construction 
+            has been delayed due to COVID-19.
+          </p>
+          <p>***More details coming soon!***</p>
+        <h1>Automated Mast Sorting Device</h1>
+        <p class="lead">August 2018 - May 2019</p>
+          <p>At the behest of the Duke Forest, I worked in a team of 5 students to design and prototype an automated sorting device for tree nuts, known as mast, 
+            to operate via purely mechanical sorting methods. I later revisited the project in a new team of 3 students to build a higher fidelity prototype
+            by machining aluminum and polycarbonate components to replace the original, primarily wooden device. We also redesigned the device to make it smaller,
+            more compact, and easier to transport.
+          </p>
+        <div class="row">
+          <div class="col-8">
+            <h2 class="secondary">Poster</h2>
+            <p>After the completion of the first prototype, we presented our device at the Duke First-Year Design Showcase. We created this poster to
+              accompany our presentation at the poster session.
+            </p>
+          </div>
+          <div class="col-4">
+            <a class="portfolio-container" target="_blank" href="portfolio/mast/First Year Design Showcase Poster.pdf">
+              <img class="bg-image-full portfolio" style="background-image: url('portfolio/mast/poster.png');width:100%;height:100%;">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="portfolio-container" target="_blank" href="portfolio/mast/model.png">
+              <img class="portfolio portfolio-left model" src='portfolio/mast/model.png'>
+            </a>
+            <h2 class="secondary">Model</h2>
+            <p>Before building the second prototype, we created a 3D model of the revised design. In order to make the device smaller,
+              we implemented a two-part system consisting of an upper collector and a lower collector. The upper collector is built from a
+              flexible net stretched over a PVC frame. This net is designed to filter out large debris which could potentially clog the smaller lower collector.
+              The design of the lower collector is largely inherited from the first prototype, though in this iteration it is made much smaller and is constructed
+              from higher fidelity materials. To compare this device to the original prototype, please see 
+              <a target="_blank" href="portfolio/mast/First Year Design Showcase Poster.pdf">our poster</a> which was created after the initial prototype was completed. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="portfolio-container" target="_blank" href="portfolio/mast/Documentation.pdf">
+              <img class="portfolio portfolio-right mast-doc" src="portfolio/mast/Documentation.png">
+            </a>
+            <h2 class="secondary">Documentation</h2>
+            <p>We documented our project after the completion of the second prototype for submission to the Duke Forest with a written report.
+              The report contains background information about mast and explains the motivation for this project. It also goes into more detail about
+              the design decisions and functionality of the final device, including a Python simulation which was used to determine some device dimensions.
+            </p>
+          </div>
+        </div>
+        <h1>Nanocomposite Fabrication for FDM Printing</h1>
+        <p class="lead">July 2017 - August 2017</p>
+          <p>In a team of three students and under the direction of Dr. Miriam Rafailovich, 
+          I studied thermal conductivity in FDM printing and fabricated polymer nanocomposites for improved mechanical strength and thermal properties in 3D printed parts.
+          Polylactic acid and polypropylene were used as the base polymers for composite material fabrication with graphene nanoplatelets and boron nitride nanoparticles.
+          This research was conducted at Stony Brook University as part of the Garcia Center for Polymers at Engineered Interfaces.
         </p>
+        <div class="row">
+          <div class="col">
+            <h2 class="secondary">Documentation</h2>
+            <p>To document our research, we wrote a 21-page paper which provides background information on the project, details our materials and methods,
+              and explains the results we achieved.
+            </p>
+          </div>
+          <div class="col-4">
+            <a class="portfolio-container" target="_blank" href="portfolio/nanocomposites/Thermal Conductivity of Nanocomposites in the FDM Printing Process.pdf">
+            <img class="bg-image-full portfolio" style="background-image: url('portfolio/nanocomposites/paper-min.png');width:100%;height:100%;"></img>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <a class="portfolio-container" target="_blank" href="portfolio/nanocomposites/MRS Conference Poster.pdf">
+            <img class="bg-image-full portfolio" style="background-image: url('portfolio/nanocomposites/poster-min.png');width:100%;height:100%;"></img>
+            </a>
+          </div>
+          <div class="col-8">
+            <h2 class="secondary">Poster</h2>
+            <p>In November of 2017, I was invited to present our research at the Materials Research Society Fall Meeting & Exhibit in Boston, MA. I created this poster to
+              accompany my presentation at the poster session. 
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-4">
-        <a target="_blank" href="portfolio/mast/First Year Design Showcase Poster.pdf">
-        <img class="bg-image-full portfolio" style="background-image: url('portfolio/mast/poster.png');width:100%;height:100%;"></img>
-        </a>
+      <div id="minorProj" style="display: none;">
+        <h1>Captain America Shield Launcher</h1>
+        <p class="lead">February 2019 - March 2019</p>
+          <p>As an exercise in practical engineering and manufacturing techniques, I worked in a team of 3 students to design an injection moldable 
+            McDonald's Happy Meal toy that we later presented to a team of professional engineers responsible for designing real Happy Meal toys. In 
+            preparation for this toy fair, we sent our design to an independent manufacturing company to be professionally 3D printed for a high quality
+            prototype.
+          </p>
+        <div class="row">
+          <div class="col">
+            <h2 class="secondary">Documentation</h2>
+            <p>To document our project we composed a technical memo detailing our ideation process, toy description, and marketing analysis.
+              The memo presents information about the manufacturability of the toy, including relevant design choices and projected cost figures.
+              All technical drawings and CAD renderings are also included in the documentation. 
+            </p>
+          </div>
+          <div class="col-4">
+            <a class="portfolio-container" target="_blank" href="portfolio/mcdonalds/Documentation.pdf">
+              <img class="bg-image-full portfolio" style="background-image: url('portfolio/mcdonalds/Documentation.png');width:100%;height:100%;"></img>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="portfolio-container" target="_blank" href="portfolio/mcdonalds/model.png">
+              <img class="portfolio portfolio-left model" src='portfolio/mcdonalds/model.png'>
+            </a>
+            <h2 class="secondary">Model</h2>
+            <p>We modeled the toy in seven parts: the shield, shield mount (not visible), launcher top half, launcher bottom half, 
+              wristband, front spring pad (not visible), and back spring pad (not visible). The rendering on the right was 
+              generated in SolidWorks using the complete toy assembly. An exploded view of the model as well as technical drawings for each of the 
+              seven parts can be found in our <a target="_blank" href="portfolio/mcdonalds/Documentation.pdf">project documentation</a>.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h2 class="secondary">Marketing Sheet</h2>
+            <p>To accompany our presentation at the toy fair, we created a marketing sheet which outlines the assembly, functionality,
+              safety features, and manufacturability of our toy.
+            </p>
+          </div>
+          <div class="col-4">
+            <a class="portfolio-container" target="_blank" href="portfolio/mcdonalds/Marketing Sheet.png">
+              <img class="bg-image-full portfolio" style="background-image: url('portfolio/mcdonalds/Marketing-thumb.png');width:100%;height:100%;"></img>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <a target="_blank" href="portfolio/mast/model.png">
-          <img class="portfolio portfolio-left" src='portfolio/mast/model.png' style="max-width:30%;"></img>
-        </a>
-        <h2 class="secondary">Model</h2>
-        <p>Before building the second prototype, we created a 3D model of the revised design. In order to make the device smaller,
-          we implemented a two-part system consisting of an upper collector and a lower collector. The upper collector is built from a
-          flexible net stretched over a PVC frame. This net is designed to filter out large debris which could potentially clog the smaller lower collector.
-          The design of the lower collector is largely inherited from the first prototype, though in this iteration it is made much smaller and is constructed
-          from higher fidelity materials. To compare this device to the original prototype, please see 
-          <a target="_blank" href="portfolio/mast/First Year Design Showcase Poster.pdf">our poster</a> which was created after the initial prototype was completed. 
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <a target="_blank" href="portfolio/mast/Documentation.pdf">
-          <img class="portfolio portfolio-right mast-doc" src="portfolio/mast/documentation.png"></img>
-        </a>
-        <h2 class="secondary">Documentation</h2>
-        <p>We documented our project after the completion of the second prototype for submission to the Duke Forest with a written report.
-          The report contains background information about mast and explains the motivation for this project. It also goes into more detail about
-          the design decisions and functionality of the final device, including a Python simulation which was used to determine some device dimensions.
-        </p>
-      </div>
-    </div>
-	  <h1>Nanocomposite Fabrication for FDM Printing</h1>
-	  <p class="lead">July 2017 - August 2017</p>
-      <p>In a team of three students and under the direction of Dr. Miriam Rafailovich, 
-	    I studied thermal conductivity in FDM printing and fabricated polymer nanocomposites for improved mechanical strength and thermal properties in 3D printed parts.
-	    Polylactic acid and polypropylene were used as the base polymers for composite material fabrication with graphene nanoplatelets and boron nitride nanoparticles.
-      This research was conducted at Stony Brook University as part of the Garcia Center for Polymers at Engineered Interfaces.
-    </p>
-	  <div class="row">
-			<div class="col">
-        <h2 class="secondary">Documentation</h2>
-        <p>To document our research, we wrote a 21-page paper which provides background information on the project, details our materials and methods,
-          and explains the results we achieved.
-        </p>
-      </div>
-			<div class="col-4">
-        <a target="_blank" href="portfolio/nanocomposites/Thermal Conductivity of Nanocomposites in the FDM Printing Process.pdf">
-        <img class="bg-image-full portfolio" style="background-image: url('portfolio/nanocomposites/paper-min.png');width:100%;height:100%;"></img>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <a target="_blank" href="portfolio/nanocomposites/MRS Conference Poster.pdf">
-        <img class="bg-image-full portfolio" style="background-image: url('portfolio/nanocomposites/poster-min.png');width:100%;height:100%;"></img>
-        </a>
-      </div>
-      <div class="col-8">
-        <h2 class="secondary">Poster</h2>
-        <p>In November of 2017, I was invited to present our research at the Materials Research Society Fall Meeting & Exhibit in Boston, MA. I created this poster to
-          accompany my presentation at the poster session. 
-        </p>
-      </div>
-		</div>
 	  </div>
-<!-- 	<div id="paperModal" class="modal">
-	  <div class="container">
-		<div class="modal-content">
-			<span class="close">&times;</span>
-			<iframe src="portfolio/nanocomposites/Thermal Conductivity of Nanocomposites in the FDM Printing Process.pdf" class="paper"></iframe>
-		</div>
-	  </div>
-	</div> -->	
   </section>
 
   <!-- Footer -->

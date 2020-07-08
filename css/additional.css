@@ -43,11 +43,11 @@
 	color:#343a40;
 }
 
-.fa-paper-plane {
+#resume-link > .fa-external-link {
 	opacity:0;
 }
 
-#contact-link:hover > .fa-paper-plane {
+#resume-link:hover > .fa-external-link {
 	opacity:1;
 }
 
@@ -63,6 +63,25 @@
 	font-weight:300
 }
 
+/* .portfolio {
+	padding:15px
+}
+
+.portfolio:hover {
+	background:rgb(238, 238, 238)
+} */
+
+.portfolio-img {
+	height:100px;
+	transition: all .5s ease;
+	object-fit:cover;
+	object-position: top;
+}
+
+.portfolio-img:hover {
+	height:300px;
+}
+
 .portfolio {
 	background-position:top;
 	cursor:pointer;
@@ -73,7 +92,7 @@
 	clear:left;
 	float:left;
 	margin-right:30px;
-	margin-bottom:0px;
+	margin-bottom:15px;
 	object-fit:cover;
 	object-position:top;
 }
@@ -82,7 +101,7 @@
 	clear:right;
 	float:right;
 	margin-left:30px;
-	margin-bottom:0px;
+	margin-bottom:15px;
 	object-fit:cover;
 	object-position:top;
 }
@@ -96,4 +115,31 @@
 	.mast-doc {
 		max-height:150px;
 	}
+}
+
+.projects:hover {
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+.projects.active {
+	font-weight:400;
+	color:rgb(0, 0, 0)
+}
+
+.projects.active:hover {
+	text-decoration: none;
+}
+
+.portfolio-container:hover .portfolio {
+	border: 3px solid #343a40
+}
+
+.model {
+	max-width:30%;
+}
+
+.model:hover {
+	max-width: 30%;
+	margin-bottom:16px;
 }

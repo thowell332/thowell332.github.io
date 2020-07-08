@@ -1,15 +1,13 @@
-// Modal code
-var modal = document.getElementById("paperModal");
-var btn = document.getElementById("paper");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
+function switchDisp(id1, id2) {
+  var container1 = document.getElementById(id1);
+  var container2 = document.getElementById(id2);
+  container1.style.display = "inline-block";
+  container2.style.display = "none";
 }
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+
+function switchTabs(id1,id2) {
+	var active = document.getElementById(id1);
+	var inactive = document.getElementById(id2);
+	active.className = "lead projects active";
+	inactive.className = "lead projects";
 }
