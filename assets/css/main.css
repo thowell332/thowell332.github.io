@@ -2300,6 +2300,14 @@ span.header {
   margin: 0 0 1em 0;
   font-size: 1.75em;
 }
+span.header-3 {
+  color: #3d4449;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  font-size: 1.25em;
+}
 h1.project-header {
   margin-bottom: 0.25em !important;
 }
