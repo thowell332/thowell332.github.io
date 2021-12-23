@@ -95,8 +95,7 @@ body {
   --color-primary-light: #8c1aff;
   --color-primary-dark: #5900b3;
   --color-btn-hover: #f2e6ff;
-  --color-btn-active: #e5ccff;
-}
+  --color-btn-active: #e5ccff; }
 
 /* Type */
 body, input, select, textarea {
@@ -2283,11 +2282,40 @@ button,
 
 /* Custom styles */
 article > h3 {
-  margin-bottom: 0.125em; }
+  margin-bottom: 0.125em;
+}
 article > p.subheader {
-  margin-bottom: 1em !important; }
+  margin-bottom: 1em !important;
+}
 span.filter-header {
   font-size: 1.125em;
   font-weight: bold;
   color: #3d4449;
+}
+span.header {
+  color: #3d4449;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  font-size: 1.75em;
+}
+h1.project-header {
+  margin-bottom: 0.25em !important;
+}
+h1.project-header > span.small {
+  font-size: 0.5em;
+  font-weight: 400;
+  white-space: nowrap;
+}
+p.project-subheader {
+  margin-bottom: 4em !important;
+}
+span.image {
+  text-align: center !important;
+}
+.mw-fig {
+  max-width: 900px !important;
+  margin-left: auto;
+  margin-right: auto;
 }
