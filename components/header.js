@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <link rel="stylesheet" href="assets/css/main.css" />
+            <link rel="stylesheet" href="../assets/css/main.css" />
             
             <header id="header">
                 <a href="index.html" class="logo"><strong>Thomas J Howell</strong></a>
